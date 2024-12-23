@@ -1,0 +1,33 @@
+@use "variables";
+
+@mixin img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@mixin small-button {
+  /* Font */
+  font-family: variables.$biryani-font;
+  font-size: 0.5rem;
+  font-weight: 700;
+
+  /* Size */
+  padding: 12px 16px 12px 16px;
+}
+
+@mixin noto-500w {
+  font-family: variables.$noto-font;
+  font-weight: 500;
+}
+
+@mixin biryani-400w {
+  font-family: variables.$biryani-font;
+  font-weight: 400;
+}
+
+@mixin biryani-700w {
+  font-family: variables.$biryani-font;
+  font-weight: 700;
+}

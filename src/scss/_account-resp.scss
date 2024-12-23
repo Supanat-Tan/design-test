@@ -1,0 +1,169 @@
+@use "variables";
+@use "mixins" as *;
+
+/* Responsive design for account section */
+
+@media (max-width: 1080px) {
+  .account {
+    top: 963px;
+
+    height: 390px;
+  }
+}
+
+@media (max-width: 800px) {
+  .account {
+    /* Position */
+    top: 787px;
+
+    /* Size */
+    height: 380px;
+
+    .main-account-container {
+      /* Position */
+
+      /* Size */
+      height: 332px;
+
+      .information {
+        .topic {
+          gap: 4px;
+
+          > h2 {
+            /* Size */
+            max-width: 712px;
+            height: 46px;
+
+            /* Spacing */
+            line-height: 46px;
+          }
+
+          > span {
+            /* Size */
+            max-width: 191px;
+            height: 36px;
+
+            /* Font*/
+            font-size: 0.6rem;
+            line-height: 18px;
+          }
+        }
+
+        > img {
+          width: 37.62px;
+        }
+
+        > span {
+          /* Size */
+          max-width: 712px;
+          height: 54px;
+
+          /* Font */
+          font-size: 0.6rem;
+
+          /* Spacing */
+          line-height: 18px;
+        }
+      }
+
+      .button-container {
+        /* Display */
+        justify-content: flex-start;
+        gap: 24px;
+
+        /* Size */
+        max-width: 317.66px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .account {
+    .main-account-container {
+      height: 378px;
+
+      .information {
+        height: 238px;
+
+        .topic {
+          height: 126px;
+
+          h2 {
+            height: 92px;
+          }
+        }
+
+        > span {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .account {
+    /* Position */
+    top: 1320px;
+
+    /* Size */
+    height: 494px;
+
+    .main-account-container {
+      height: 454px;
+
+      .information {
+        /* Display */
+        justify-content: flex-start;
+        height: 322px;
+        gap: 16px;
+        .topic {
+          /* Display */
+          gap: 8px;
+          /* Size */
+          max-width: 398px;
+          height: 164px;
+
+          > h2 {
+            /* Size */
+            height: 120px;
+
+            /* Font */
+            font-size: 1.6rem;
+
+            /* Spacing */
+            line-height: 40px;
+          }
+
+          > span {
+            max-width: 150px;
+            height: 36px;
+          }
+        }
+
+        > span {
+          max-width: 398px;
+          height: 90px;
+        }
+      }
+
+      .button-container {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .account {
+    .main-account-container {
+      .information {
+        > span {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

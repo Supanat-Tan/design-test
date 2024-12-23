@@ -1,0 +1,71 @@
+@use "variables";
+@use "mixins" as *;
+
+@use "category";
+@use "account";
+@use "product";
+@use "effect";
+
+/* Responsive */
+@use "category-resp";
+@use "account-resp";
+@use "product-resp";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  /* Size */
+  width: 100%;
+  height: 2057.32px;
+
+  .bg {
+    /* Position */
+    position: absolute;
+    z-index: 1;
+
+    /* Size */
+    width: 100%;
+    height: 2057.32px;
+
+    /* Appearance */
+    background-color: variables.$background;
+  }
+
+  .page {
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    /* Size */
+    width: 100%;
+    max-width: 1680px;
+    height: 2057.32px;
+
+    /* Appearance */
+    background-color: variables.$foreground;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    height: 1439px;
+
+    .page,
+    .bg {
+      height: auto;
+    }
+  }
+}
