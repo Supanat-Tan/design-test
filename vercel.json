@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "src/scss/main.scss",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ],
+    "env": {
+      "SASS_BINARY_PATH": "/vercel/path0/node_modules/.bin/sass"
+    }
+  }
