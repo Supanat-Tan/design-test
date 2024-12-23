@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/scss/main.scss dist/main.css",
-    "watch": "sass --watch src/scss/main.scss:dist/main.css"
+    "build": "npx sass src/scss/main.scss dist/main.css",
+    "watch": "npx sass --watch src/scss/main.scss:dist/main.css"
   },
   "keywords": [],
   "author": "",
