@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx sass src/scss/main.scss public/main.css",
+    "build": "npx sass src/scss/main.scss public/main.css && cp index.html public/index.html",
     "watch": "npx sass --watch src/scss/main.scss:dist/main.css"
   },
   "keywords": [],
