@@ -150,7 +150,7 @@
 }
 .category .main-container .category-container .img-background {
   /* Background Image */
-  background-image: url("/src/assets/Imgs/Category/img-4.jpg");
+  background-image: url("../../public/assets/Imgs/Category/img-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
