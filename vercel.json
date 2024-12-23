@@ -1,0 +1,12 @@
+{
+    "builds": [
+      {
+        "src": "src/scss/main.scss",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ],
+    "outputDirectory": "dist"
+  }
