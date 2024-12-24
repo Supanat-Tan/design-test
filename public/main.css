@@ -93,6 +93,8 @@
   line-height: 48px;
   /* Appearance */
   list-style-type: none;
+  /* Effect */
+  cursor: pointer;
 }
 .category .main-container .title-slide .slide-bar ul li:nth-child(4) {
   color: #c6a26d;
