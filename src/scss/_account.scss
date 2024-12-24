@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+
     /* Size*/
     width: 100%;
     max-width: 1680px;
@@ -118,6 +119,7 @@
 
         /* Effect */
         transition: background-color 0.5s;
+        cursor: pointer;
       }
 
       button:hover {

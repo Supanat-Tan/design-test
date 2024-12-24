@@ -150,7 +150,7 @@
 }
 .category .main-container .category-container .img-background {
   /* Background Image */
-  background-image: url("../../public/assets/Imgs/Category/img-4.jpg");
+  background-image: url("assets/Imgs/Category/img-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -344,6 +344,7 @@
   background-color: #c6a26d;
   /* Effect */
   transition: background-color 0.5s;
+  cursor: pointer;
 }
 .account .main-account-container .button-container button:hover {
   background-color: #c7974f;
@@ -771,12 +772,16 @@
     max-width: 712px;
     height: 496px;
   }
-  .category .main-container .category-main-container .category-container .category-first-row > img:nth-child(1),
-  .category .main-container .category-main-container .category-container .category-first-row img:nth-child(2) {
+  .category .main-container .category-main-container .category-container .category-first-row > img:nth-child(1) {
+    width: 56%;
     height: 244px;
   }
-  .category .main-container .category-main-container .category-container .category-second-row > img:nth-child(1),
-  .category .main-container .category-main-container .category-container .category-second-row img:nth-child(2) {
+  .category .main-container .category-main-container .category-container .category-first-row > img:nth-child(2) {
+    width: 45%;
+    height: 244px;
+  }
+  .category .main-container .category-main-container .category-container .category-second-row > img:nth-child(1) {
+    width: 44%;
     height: 244px;
   }
   .category .main-container .category-main-container .category-container .category-second-row .img-background {
@@ -826,7 +831,7 @@
 }
 @media (max-width: 702px) {
   .category .main-container .category-main-container .category-container .category-first-row img:nth-child(1) {
-    width: 57.5%;
+    width: 53.8%;
   }
 }
 @media (max-width: 600px) {
@@ -854,6 +859,9 @@
     /* Size */
     max-width: 414px;
     height: 40px;
+  }
+  .category .main-container .title-slide .slide-bar ul {
+    gap: 11px;
   }
   .category .main-container .title-slide .slide-bar ul li:nth-child(2),
   .category .main-container .title-slide .slide-bar ul li:nth-child(6) {
@@ -926,10 +934,13 @@
 /* Responsive design for account section */
 @media (max-width: 1080px) {
   .account {
+    /* Position */
     top: 963px;
+    /* Size */
     height: 390px;
   }
 }
+/* Tablet*/
 @media (max-width: 800px) {
   .account {
     /* Position */
